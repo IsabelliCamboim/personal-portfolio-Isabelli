@@ -62,4 +62,11 @@ function enviarFormulario(event) {
     mensagem.value = '';
 }
 
+function abrirGithub() {
+    window.open("https://github.com/IsabelliCamboim", "_blank");
+}
+
+function abrirLinkedin() {
+    window.open("https://www.linkedin.com/in/isabelli-camboim-508725179", "_blank");
+}
 

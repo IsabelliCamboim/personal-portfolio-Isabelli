@@ -28,23 +28,25 @@
          <main>
             <section class="fundo">
                 <section id="inicio" class="page active">
-                    <div class="foto">
-                        <img src="./img/avatar-isabelli.png"  />
-                    </div>
-                    
-                    <div class="texto">
-                        <h1>Olá, eu sou Isabelli</h1>
+                    <div class="inicio-container">
+                        <div class="foto">
+                            <img src="./img/avatar-isabelli.png"  />
+                        </div>
+                        
+                        <div class="texto">
+                            <h1>Olá, eu sou Isabelli</h1>
 
-                        <h3>Desenvolvedora Delphi • C# • .NET</h3>
+                            <h3>Desenvolvedora Delphi • C# • .NET</h3>
 
-                        <p>
-                            Apaixonada por desenvolvimento de software e sempre
-                            buscando
-                            aprender novas tecnologias.
-                        </p>
-
-                        <button id="btnSaibaMais" onclick="irParaPagina('sobre')">Saiba Mais</button>
-                    </div>
+                            <p>
+                                Apaixonada por desenvolvimento de software e sempre
+                                buscando
+                                aprender novas tecnologias.
+                            </p>
+                            
+                            <button id="btnSaibaMais" onclick="irParaPagina('sobre')">Saiba Mais</button>
+                        </div>
+                    </div>                    
                 </section>
 
                 <section id = "sobre" class="page">
@@ -52,13 +54,18 @@
                     <div class="texto">
                         <h1>Sobre Mim</h1>
                         <p>
-                            Sou formada em Sistemas de Informação e atuo com
-                            desenvolvimento Delphi, C# e .NET.
+                            Iniciei minha jornada na area da tecnologia aos 16 anos cursando o ensino médio técnico em informática pelo instituto federal sul-riograndense (IFSul) onde tive a oportunidade de aprender
+                            diversos conceitos de programação e da tecnologia da informação como um todo. Conclui o curso em 2019 e decidi que queria me aprofundar ainda mais na área, então ingressei no curso de Sistemas de Informação
+                            na Unisinos. Em paralelo a faculdade também iniciei minha carreira profissional na área de desenvolvimento de software, com as tecnologias Delphi e SQL.
+                            Hoje sou formada em Sistemas de Informação e atuo com desenvolvimento Delphi, C# e .NET. Minha atuação envolve análise, desenvolvimento e manutenção de sistemas, com foco em soluções eficientes e inovadoras.
+                            Atualmente busco me aprofundar em novas tecnologias e aprimorar minhas habilidades em desenvolvimento de software. Em virtude disso, estou no programa de Dev full stack da +PraTi, onde estou em constante aprendizado
+                            e tem sido uma experiência incrível, que tem mudado a forma como eu vejo o desenvolvimento de software e me permitido amadurecer minha carreira profissional.
+                            
                         </p>
 
                         <div class=" redes-sociais">
-                        <a href="#" target="_blank"><img src="./img/linkedin.png" alt="logo LinkedIn" /></a>
-                        <a href="#" target="_blank"><img src="./img/github.png" alt="logo GitHub" /></a>
+                        <a href="#" target="_blank"><img src="./img/linkedin.png" alt="logo LinkedIn" onclick="abrirLinkedin()" /></a>
+                        <a href="#" target="_blank"><img src="./img/github.png" alt="logo GitHub" onclick="abrirGithub()" /></a>
                         </div>
                     </div>
 
