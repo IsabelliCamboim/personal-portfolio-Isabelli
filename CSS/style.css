@@ -1,12 +1,13 @@
 *{
     margin:0;
     padding:0;
-    /* box-sizing:border-box; */
+    box-sizing:border-box;
 }
 
 body{
     background:#0F172A;
     font-family:Arial;
+    color:#F8FAFC;
 }
 
 .cabeçalho{
@@ -17,6 +18,14 @@ body{
     padding:20px 80px;
     gap:20px;
     background:white;
+    width:100vw;
+    color:#444;
+
+}
+
+.cabeçalho img{
+
+    width: 23px;
 
 }
 
@@ -38,7 +47,7 @@ body{
 .menu a:hover{
 
     transform:scale(1.20);
-    color:#cf0ec9;
+    color:#A78BFA;
 
 }
 
@@ -59,14 +68,11 @@ body{
     justify-content:center;
     width: 100vw;
     height: 100vh;
-
     padding:60px;
-    /* background:#883072; */
 
 }
 
 .inicio{
-    border:1px solid green;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -75,7 +81,6 @@ body{
 }
 
 .sobre{
-    border:1px solid blue;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -84,12 +89,12 @@ body{
 }
 
 .skills{
-    border:1px solid red;
     display:flex;
     align-items:center;
     justify-content:center;
     gap:50px;
     padding:60px;
+    color:#F8FAFC;
 }
 
 .contato{
@@ -101,11 +106,18 @@ body{
     padding:60px;
 }
 
+.foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .foto img{
-
-    width:320px;
-    border-radius:10px;
-
+    width: 150px;
+    height: 150px;
+    background-color:#A78BFA;
+    border-radius: 50%;
+    display: block;
 }
 
 .texto{
@@ -113,14 +125,28 @@ body{
     margin-left:50px;
     width:500px;
     color:#F8FAFC;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
 
 }
 
 .texto h1{
 
-    font-size:45px;
+    font-size: 45px;
 
 }
+
+.texto p{
+
+    font-size: 20px;
+    margin: 15px;
+
+}
+
 
 .sobre{
     
@@ -129,11 +155,14 @@ body{
     justify-content:center;
     gap:50px;
     padding:60px;
+    color:#F8FAFC;
 }
 
 .redes-sociais{
 
     display:flex;
+    align-items:center;
+    justify-content:center;
     gap: 15px;
     margin-top:20px;
 
@@ -141,7 +170,8 @@ body{
 
 .redes-sociais img{
 
-    width: 25px;
+    width: 30px;
+    
 
 }
 
@@ -155,14 +185,18 @@ body{
 
 button{
 
+    display: flex;
+    justify-content:center;
+    align-items:center;
     margin-top:20px;
     padding:12px 25px;
-    background:#3B82F6;
-    color:white;
+    background:#A78BFA;
+    color:#F8FAFC;
     border:none;
     cursor:pointer;
 
 }
+
 
 section{
 
@@ -205,9 +239,26 @@ textarea{
         gap: 12px;
     }
 
+    .cabeçalho h3 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .texto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     .main {
         padding: 20px;
         flex-direction: column;
+    }
+
+    button {
+        flex-direction: column;
+        align-items: center;
     }
 
 }

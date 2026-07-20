@@ -16,3 +16,4 @@ links.forEach((link) => {
     targetPage.classList.add('active');
   });
 });
+
