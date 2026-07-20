@@ -1,3 +1,10 @@
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+
 *{
     margin:0;
     padding:0;
@@ -164,7 +171,7 @@ body{
 
 .texto p{
 
-    font-size: 20px;
+    font-size: 18px;
     margin: 15px;
 
 }
@@ -229,6 +236,17 @@ body{
     color: #F8FAFC;
 }
 
+.skill img{
+    display: block;
+    width: 55px;
+    height: 45px;
+    padding-left: 10px;
+}
+
+.skill img:hover{
+    animation: shake 0.75s ease-in-out;
+}
+
 .hard-skills {
   height: 30vh;
   display: flex;
@@ -242,11 +260,6 @@ body{
   padding: 20px;
 }
 
-.hard-skills img {
-  display: block;
-  width: 80px;
-}
-
 .soft-skills {
   height: 30vh;
   text-align: center;
@@ -257,6 +270,21 @@ body{
   padding: 20px;
   display: flex;
   flex-direction: column;
+}
+
+.card{
+
+    background: #444;
+    color:white;
+    padding:20px;
+    margin:15px;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
 }
 
 button{

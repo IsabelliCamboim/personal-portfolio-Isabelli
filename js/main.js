@@ -70,3 +70,75 @@ function abrirLinkedin() {
     window.open("https://www.linkedin.com/in/isabelli-camboim-508725179", "_blank");
 }
 
+const usuarioGithub = "IsabelliCamboim";
+
+async function carregarPerfilGithub() {
+
+
+    const retorno = await fetch(`https://api.github.com/users/${usuarioGithub}`);
+
+
+    const dados = await retorno.json();
+
+
+    document.getElementById("perfil").innerHTML = `
+
+        <div class="card">
+
+            <h3>${dados.name}</h3>
+
+            <p>${dados.bio}</p>
+
+            <p>Repositórios: ${dados.public_repos}</p>
+
+           <button onclick="abrirRepositorio('${dados.html_url}')">
+                Ver perfil no github
+            </button>
+
+        </div>
+    `;
+
+}
+
+async function carregarRepositorios(){
+
+    const resposta = await fetch(
+       `https://api.github.com/users/${usuarioGithub}/repos` 
+    );
+
+    const repositorio = await resposta.json();
+
+    let html = "";
+
+    repositorio.forEach(repo => {
+
+        const data = new Date(repo.updated_at);
+
+        const dataTratada = data.toLocaleDateString("pt-BR");
+
+        html += `
+            <div class="card">
+
+                <h3>${repo.name}</h3>
+
+                <p>${repo.description || "Sem descrição"}</p>
+
+                <p> Atualizado em: ${dataTratada}</p>
+
+                <button onclick="abrirRepositorio('${repo.html_url}')">
+                    Ver Projeto
+                </button>
+
+            </div>
+        `;
+    });
+
+    document.getElementById("repositorios-container").innerHTML = html;
+}
+
+function abrirRepositorio(url) {
+    window.open(url, '_blank');
+}
+
+carregarPerfilGithub();
+carregarRepositorios();
