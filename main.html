@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfólio | Isabelli Camboim</title>
+
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script src="js/components/site-header.js" def></script>
+        
+    </head>
+    
+    <body>
+        <header class="cabeçalho">
+            <h3><img src="./img/laptop.png" alt="logo laptop" /></h3>
+            <nav class="menu">
+            <a href="#" data-page="inicio">Início</a>
+            <a href="#" data-page="sobre">Sobre</a>
+            <a href="#" data-page="skills">Skills</a>
+            <a href="#" data-page="contato">Contato</a>
+            <a href="#" data-page="projetos">Projetos</a>
+        </nav>
+        </header>
+
+ 
+         <!-- <site-header></site-header> -->
+
+         <main>
+            <section class="fundo">
+                <section id="inicio" class="page active">
+                    <div class="inicio-container">
+                        <div class="foto">
+                            <img src="./img/avatar-isabelli.png"  />
+                        </div>
+                        
+                        <div class="texto">
+                            <h1>Olá, eu sou Isabelli</h1>
+
+                            <h3>Desenvolvedora Delphi • C# • .NET</h3>
+
+                            <p>
+                                Sempre buscando aprender novas tecnologias.
+                            </p>
+
+                            <p>
+                                Este é meu portfólio pessoal onde conto um pouco de quem sou, minhas habilidades e
+                                meus projetos.
+                            </p>
+                            
+                            <button id="btnSaibaMais" onclick="irParaPagina('sobre')">Saiba Mais</button>
+                        </div>
+                    </div>                    
+                </section>
+
+                <section id = "sobre" class="page">
+
+                    <div class="texto">
+                        <h1>Sobre Mim</h1>
+                        <p>
+                            Iniciei minha jornada na área da tecnologia aos 16 anos, ao cursar o Ensino Médio Técnico em Informática pelo Instituto Federal Sul-rio-grandense (IFSul), onde tive a oportunidade de aprender diversos conceitos de programação e de tecnologia da informação como um todo.
+                            Concluí o curso em 2019 e decidi que queria me aprofundar ainda mais na área. Então, ingressei no curso de Sistemas de Informação da Unisinos. Paralelamente à faculdade, iniciei minha carreira profissional no desenvolvimento de software, trabalhando com as tecnologias Delphi e SQL.
+                            Hoje sou bacharel em Sistemas de Informação e atuo no desenvolvimento de aplicações utilizando Delphi, C# e .NET. Minha atuação envolve análise, desenvolvimento e manutenção de sistemas, sempre com foco na criação de soluções eficientes, inovadoras e de qualidade.
+                            Atualmente, busco ampliar meus conhecimentos em novas tecnologias e aprimorar continuamente minhas habilidades em desenvolvimento de software. Por isso, faço parte do programa de Desenvolvimento Full Stack da +PraTi, onde estou em constante aprendizado. Essa experiência tem sido extremamente enriquecedora, transformando a forma como enxergo o desenvolvimento de software e contribuindo significativamente para o amadurecimento da minha carreira profissional.
+                        </p>
+
+                        <div class=" redes-sociais">
+                        <a href="#" target="_blank"><img src="./img/linkedin.png" alt="logo LinkedIn" onclick="abrirLinkedin()" /></a>
+                        <a href="#" target="_blank"><img src="./img/github.png" alt="logo GitHub" onclick="abrirGithub()" /></a>
+                        </div>
+                    </div>
+
+                    
+                </section>
+
+                <section id="skills" class="page">
+                    <div class="skills-container">
+                        <h2>Hard Skills</h2>
+                        
+                        <div class="hard-skills">
+                            <div class="skill">
+                                <h2>Delphi</h2>
+                                <img src="./img/delphi.png" alt="logo Delphi" />
+                            </div>
+                            <div class="skill">
+                                <h2>C#</h2>
+                                <img src="./img/csharp.png" alt="logo C#" />
+                            </div>
+                            <div class="skill">
+                                <h2>.NET</h2>
+                                <img src="./img/dotnet.png" alt="logo .NET" />
+                            </div>
+                            <div class="skill">
+                                <h2>JavaScript</h2>
+                                <img src="./img/js.png" alt="logo JavaScript" />
+                            </div>
+                            <div class="skill">
+                                <h2>SQL Server</h2>
+                                <img src="./img/sql.png" alt="logo SQL Server" />
+                            </div>
+                        </div>
+                        
+                        <h2>Soft Skills</h2>
+                        <div class="soft-skills">
+                            <h2>Determinação</h2>
+                            <h2>Trabalho em equipe</h2>
+                            <h2>Comunicação</h2>
+                            <h2>Resiliência</h2>
+                            <h2>Aprendizado contínuo</h2>
+                            <h2>Responsábilidade</h2>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contato" class="page">
+                    <h2>Contato</h2>
+
+                    <form id="formulario-contato">
+                        <input type="text" name="nome" id="nome" placeholder="Nome" required />
+
+                        <input type="email" name="email" id="email" placeholder="Email" required />
+
+                        <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+
+                        <button type="button" class="btn" onclick="enviarFormulario(event)">Enviar</button>
+
+                        <p id="retorno"></p>
+                    </form>
+                </section>
+
+                <section id="projetos" class="page">
+                    <h2>Projetos</h2>
+                    <div id="repositorios-container" class="repositorios-container">
+                        <p>Carregando repositórios...</p>
+                    </div>
+
+                    <h2>Perfil</h2>
+                    <div id="perfil" class="perfil">
+                        <p>Carregando perfil...</p>
+                    </div>
+
+                </section>
+
+            </section>
+
+                
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2026 Isabelli Camboim. Todos os direitos reservados.</p>
+        </footer>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
