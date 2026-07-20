@@ -24,7 +24,7 @@ O projeto é um site de portfólio que exibe:
 
 ## 🗂️ Estrutura do Projeto
 
-- `main` — arquivo HTML principal
+- `index` — arquivo HTML principal
 - `CSS/style.css` — estilos principais da página
 - `js/main.js` — lógica da navegação, formulário e carregamento GitHub
 - `img/` — imagens e ícones usados no site
@@ -39,7 +39,7 @@ O projeto é um site de portfólio que exibe:
 ## ✅ Como rodar o projeto
 
 1. Abra a pasta do projeto no seu editor.
-2. Abra o arquivo `main` no navegador.
+2. Abra o arquivo `index` no navegador.
 
 
 ## 💡 Observações
@@ -50,6 +50,6 @@ O projeto é um site de portfólio que exibe:
 
 ## 📌 Recomendações
 
-- Mantenha o arquivo `main` como entrada principal ou renomeie para `index.html`
+- Mantenha o arquivo `index` como entrada principal ou renomeie para `index.html`
 - Use um servidor local para evitar problemas com fetch em navegadores modernos
 
