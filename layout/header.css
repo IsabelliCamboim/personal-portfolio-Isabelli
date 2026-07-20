@@ -1,0 +1,32 @@
+.cabeçalho{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    gap:20px;
+    background:white;
+
+}
+
+.menu {
+
+    margin-left:20px;
+    color:#444;
+
+}
+
+.menu a{
+
+    margin-left:20px;
+    text-decoration:none;
+    color:#444;
+
+}
+
+.menu a:hover{
+
+    transform:scale(1.20);
+    color:#cf0ec9;
+
+}

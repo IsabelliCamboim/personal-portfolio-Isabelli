@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfólio | Isabelli Camboim</title>
+
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script src="js/components/site-header.js" def></script>
+        <script src="./js/main.js"></script>
+        
+    </head>
+
+    <body>
+        <header class="cabeçalho">
+            <h3>Portfólio</h3>
+            <nav class="menu">
+            <a href="#" data-page="inicio">Início</a>
+            <a href="#" data-page="sobre">Sobre</a>
+            <a href="#" data-page="skills">Skills</a>
+            <a href="#" data-page="contato">Contato</a>
+        </nav>
+        </header>
+
+ 
+         <!-- <site-header></site-header> -->
+
+        <main>
+            <section class="fundo">
+                <!-- <section id="inicio" class="page active">
+                    <div class="foto">
+                        <img src="images/perfil.jpg" />
+                    </div>
+
+                    <div class="texto">
+                        <h1>Olá, eu sou Isabelli</h1>
+
+                        <h3>Desenvolvedora Delphi • C# • .NET</h3>
+
+                        <p>
+                            Apaixonada por desenvolvimento de software e sempre
+                            buscando
+                            aprender novas tecnologias.
+                        </p>
+
+                        <button id="btnSaibaMais" onclick="mostrarSobre()">Saiba Mais</button>
+                    </div>
+                </section> -->
+
+                <section id = "sobre" class="page">
+                    <h2>Sobre Mim</h2>
+
+                    <p>
+                        Sou formada em Sistemas de Informação e atuo com
+                        desenvolvimento
+                        Delphi, C# e .NET.
+                    </p>
+
+                    <div class=" redes-sociais">
+                        <a href="#" target="_blank"><img src="./img/linkedin.png" alt="logo LinkedIn" /></a>
+                        <a href="#" target="_blank"><img src="./img/github.png" alt="logo GitHub" /></a>
+                    </div>
+                    
+                </section>
+
+                <section id="skills" class="page">
+                    <h2>Skills</h2>
+
+                    <ul>
+                        <li>Delphi</li>
+                        <li>C#</li>
+                        <li>.NET</li>
+                        <li>JavaScript</li>
+                        <li>SQL Server</li>
+                    </ul>
+                </section>
+
+                <section id="contato" class="page">
+                    <h2>Contato</h2>
+
+                    <form>
+                        <input type="text" placeholder="Nome" />
+
+                        <input type="email" placeholder="Email" />
+
+                        <input type="text" id="cep" placeholder="CEP" />
+
+                        <button type="button" onclick="buscarCEP()">Buscar
+                            CEP</button>
+
+                        <input type="text" id="rua" placeholder="Rua" />
+
+                        <input type="text" id="cidade" placeholder="Cidade" />
+
+                        <input type="text" id="estado" placeholder="Estado" />
+
+                        <textarea placeholder="Mensagem"></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                </section>
+
+                
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Isabelli Camboim. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>
