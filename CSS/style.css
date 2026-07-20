@@ -183,6 +183,60 @@ body{
   display: block;
 }
 
+
+.skills-container {  
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    color: #F8FAFC;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 25vw;
+}
+
+.skill h2 {
+    font-size: 20px;
+    color: #F8FAFC;
+}
+
+.hard-skills {
+  height: 30vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: #F8FAFC;
+  border: 1px solid #A78BFA;
+  background-color:#444;
+  padding: 20px;
+}
+
+.hard-skills img {
+  display: block;
+  width: 80px;
+}
+
+.soft-skills {
+  height: 30vh;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  border: 1px solid #A78BFA;
+  background-color:#3B82F6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
 button{
 
     display: flex;
@@ -250,6 +304,18 @@ textarea{
         align-items: center;
         text-align: center;
     }
+
+    .hard-skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .soft-skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 
     .main {
         padding: 20px;

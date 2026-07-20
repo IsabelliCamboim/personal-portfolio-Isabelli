@@ -43,7 +43,7 @@
                             aprender novas tecnologias.
                         </p>
 
-                        <button id="btnSaibaMais" onclick="mostrarSobre()">Saiba Mais</button>
+                        <button id="btnSaibaMais" onclick="irParaPagina('sobre')">Saiba Mais</button>
                     </div>
                 </section>
 
@@ -66,34 +66,57 @@
                 </section>
 
                 <section id="skills" class="page">
-                    <h2>Skills</h2>
-
-                    <div class="habilidade">
+                    <div class="skills-container">
+                        <h2>Hard Skills</h2>
                         
+                        <div class="hard-skills">
+                            <div class="skill">
+                                <h2>Delphi</h2>
+                                <img src="./img/delphi.png" alt="logo Delphi" />
+                            </div>
+                            <div class="skill">
+                                <h2>C#</h2>
+                                <img src="./img/csharp.png" alt="logo C#" />
+                            </div>
+                            <div class="skill">
+                                <h2>.NET</h2>
+                                <img src="./img/dotnet.png" alt="logo .NET" />
+                            </div>
+                            <div class="skill">
+                                <h2>JavaScript</h2>
+                                <img src="./img/javascript.png" alt="logo JavaScript" />
+                            </div>
+                            <div class="skill">
+                                <h2>SQL Server</h2>
+                                <img src="./img/sqlserver.png" alt="logo SQL Server" />
+                            </div>
+                        </div>
+                        
+                        <h2>Soft Skills</h2>
+                        <div class="soft-skills">
+                            <h2>Determinação</h2>
+                            <h2>Trabalho em equipe</h2>
+                            <h2>Comunicação</h2>
+                            <h2>Resiliência</h2>
+                            <h2>Aprendizado contínuo</h2>
+                            <h2>Responsábilidade</h2>
+                        </div>
                     </div>
-
-                    <!-- <ul>
-                        <li>Delphi</li>
-                        <li>C#</li>
-                        <li>.NET</li>
-                        <li>JavaScript</li>
-                        <li>SQL Server</li>
-                    </ul> -->
                 </section>
 
                 <section id="contato" class="page">
                     <h2>Contato</h2>
 
                     <form id="formulario-contato">
-                        <input type="text" placeholder="Nome" required />
+                        <input type="text" name="nome" id="nome" placeholder="Nome" required />
 
-                        <input type="email" placeholder="Email" required />
+                        <input type="email" name="email" id="email" placeholder="Email" required />
 
-                        <textarea placeholder="Mensagem"></textarea>
+                        <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
 
-                        <button type="submit">Enviar</button>
+                        <button type="button" class="btn" onclick="enviarFormulario(event)">Enviar</button>
 
-                    
+                        <p id="retorno"></p>
                     </form>
                 </section>
 
