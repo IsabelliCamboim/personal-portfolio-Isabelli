@@ -1,0 +1,352 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0F172A;
+    font-family:Arial;
+    color:#F8FAFC;
+}
+
+.cabeçalho{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    gap:20px;
+    background:white;
+    width:100vw;
+    color:#444;
+
+}
+
+.cabeçalho img{
+
+    width: 23px;
+
+}
+
+.menu {
+
+    margin-left:20px;
+    color:#444;
+
+}
+
+.menu a{
+
+    margin-left:20px;
+    text-decoration:none;
+    color:#444;
+
+}
+
+.menu a:hover{
+
+    transform:scale(1.20);
+    color:#A78BFA;
+
+}
+
+.main{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+}
+
+.fundo{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width: 100vw;
+    height: 100vh;
+    padding:60px;
+
+}
+
+.inicio{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    padding:60px;
+}
+
+.inicio-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+}
+
+.inicio-container .foto {
+    display:flex;
+    align-items:center;
+    justify-content:center; 
+}
+
+.inicio-container .texto{
+    height: 30vh;
+    width: 80vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.sobre{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    padding:60px;
+}
+
+.skills{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    padding:60px;
+    color:#F8FAFC;
+}
+
+.contato{
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    padding:60px;
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto img{
+    width: 150px;
+    height: 150px;
+    background-color:#A78BFA;
+    border-radius: 50%;
+    display: block;
+}
+
+.texto{
+
+    width:500px;
+    color:#F8FAFC;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+
+}
+
+.texto h1{
+
+    font-size: 45px;
+
+}
+
+.texto p{
+
+    font-size: 20px;
+    margin: 15px;
+
+}
+
+
+.sobre{
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    padding:60px;
+    color:#F8FAFC;
+}
+
+.redes-sociais{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap: 15px;
+    margin-top:20px;
+
+}
+
+.redes-sociais img{
+
+    width: 30px;
+    
+
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+
+.skills-container {  
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    color: #F8FAFC;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 25vw;
+}
+
+.skill h2 {
+    font-size: 20px;
+    color: #F8FAFC;
+}
+
+.hard-skills {
+  height: 30vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: #F8FAFC;
+  border: 1px solid #A78BFA;
+  background-color:#444;
+  padding: 20px;
+}
+
+.hard-skills img {
+  display: block;
+  width: 80px;
+}
+
+.soft-skills {
+  height: 30vh;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  border: 1px solid #A78BFA;
+  background-color:#3B82F6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#A78BFA;
+    color:#F8FAFC;
+    border:none;
+    cursor:pointer;
+
+}
+
+
+section{
+
+    padding:60px;
+
+}
+
+form{
+
+    display:flex;
+    flex-direction:column;
+    width:400px;
+
+}
+
+footer{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    text-align:center;
+    padding:20px 10px;
+    color:#1E293B;
+    background:#F8FAFC;
+
+}
+
+input,
+textarea{
+
+    margin:10px 0;
+    padding:12px;
+
+}
+
+@media (max-width: 768px) {
+    .cabeçalho {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .cabeçalho h3 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .texto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hard-skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .soft-skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .main {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    button {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
